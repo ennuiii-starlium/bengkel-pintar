@@ -371,7 +371,7 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 ## Blok 8: Server dan Data
 
-### [ ] B-01: Setup server API
+### [✔️] B-01: Setup server API
 **Isi:**
 - Folder `bengkelpintar_api\`, lingkungan `.venv`, `requirements.txt` (FastAPI, uvicorn, SQLAlchemy, driver PostgreSQL, pydantic, JWT, hashing password, pytest, httpx). Catat versi `scikit-learn` dan `numpy` yang akan dipakai (harus sama dengan `bengkelpintar_backend`).
 - Struktur `app\` (`main.py`, `schemas.py`, `database.py`, `models_db.py`, `auth.py`).
@@ -380,7 +380,7 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** server berjalan dengan `--host 0.0.0.0 --port 8000`, `/docs` terbuka, dan `/health` bisa dibuka dari browser HP di jaringan yang sama.
 
-### [ ] B-02: PostgreSQL, tabel, dan data awal
+### [✔️] B-02: PostgreSQL, tabel, dan data awal
 **Isi:**
 - Pasang PostgreSQL di laptop, buat database dan pengguna khusus aplikasi. Port database tidak dibuka ke jaringan.
 - Tabel di `models_db.py` sesuai `docs/PRD.md` bagian 10 (tanpa Alembic, dibuat lewat kode).
@@ -388,7 +388,7 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** tabel terbentuk, seed berjalan ulang tanpa duplikasi, dan total transaksi contoh benar (TRX-0105 Rp45.000, TRX-0104 Rp135.000, TRX-0103 Rp300.000, TRX-0102 Rp295.000).
 
-### [ ] B-03: Autentikasi dan peran
+### [✔️] B-03: Autentikasi dan peran
 **Isi:**
 - `POST /auth/login`, `GET /auth/me`, token JWT dengan masa berlaku, password di-hash.
 - Pemeriksaan peran (admin, mekanik) dan pemeriksaan header `X-API-Key` pada semua endpoint kecuali `/auth/login` dan `/health`.
@@ -396,7 +396,7 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** tes membuktikan mekanik mendapat 403 pada endpoint admin, request tanpa token mendapat 401, dan password lama ditolak setelah diganti.
 
-### [ ] B-04: Data master
+### [✔️] B-04: Data master
 **Isi:** endpoint daftar, tambah, ubah, dan nonaktifkan untuk kategori, produk, jasa, gejala, kerusakan (termasuk penautan komponen dan jasa terkait), pengguna, dan `GET/PUT /pengaturan-bengkel`, sesuai `docs/PRD.md` bagian 9. Data nonaktif tidak dihapus. Kategori yang masih dipakai produk tidak boleh dihapus.
 
 **Kriteria selesai:** semua endpoint master sesuai kontrak, dan peran dibatasi di server.
