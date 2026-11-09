@@ -401,12 +401,12 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** semua endpoint master sesuai kontrak, dan peran dibatasi di server.
 
-### [ ] B-05: Stok
+### [✔️] B-05: Stok
 **Isi:** `POST /produk/{id}/stok` (penyesuaian manual dengan alasan), `GET /produk/{id}/mutasi`, stok tidak boleh negatif, penanda stok menipis (`stok_minimum`).
 
 **Kriteria selesai:** penyesuaian tercatat sebagai mutasi dan stok baru benar (contoh: Busi NGK Standar 4 ditambah 10 menjadi 14).
 
-### [ ] B-06: Transaksi
+### [✔️] B-06: Transaksi
 **Isi:**
 - Buat dan ubah draft (`POST /transaksi`, `PUT /transaksi/{id}`), daftar dan detail. Mekanik hanya melihat dan mengubah draft miliknya. Nomor transaksi berurutan (`TRX-0105`).
 - `POST /transaksi/{id}/finalisasi` (admin) **atomik dalam satu database transaction**: cek stok, ubah status, kurangi stok, catat mutasi, simpan metode bayar dan jumlah dibayar, hitung kembalian. Gagal satu berarti batal semua.
@@ -414,14 +414,14 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** tes membuktikan finalisasi dengan stok kurang ditolak dan stok tidak berubah, dan finalisasi berhasil mengurangi stok tepat sesuai jumlah item.
 
-### [ ] B-07: Laporan dan statistik
+### [✔️] B-07: Laporan dan statistik
 **Isi:** `GET /laporan/penjualan` per periode (hari ini, 7 hari, bulan ini, rentang kustom) hanya dari transaksi final, termasuk total, jumlah, rata-rata, penjualan per hari, dan produk atau jasa terlaris. `GET /diagnosis/statistik` (opsional).
 
 **Kriteria selesai:** angka laporan cocok dengan data transaksi final di database.
 
 ## Blok 9: Diagnosis dan Kualitas
 
-### [ ] B-08: Diagnosis tiruan dan riwayat
+### [✔️] B-08: Diagnosis tiruan dan riwayat
 **Isi:**
 - `POST /diagnosis/predict` memakai **aturan tiruan deterministik** (sama dengan mock Flutter di T-04) di balik antarmuka `Classifier`, supaya B-11 hanya mengganti isinya.
 - Hasil digabung dengan data referensi: urgensi, solusi, estimasi waktu, komponen dan jasa terkait, dan **estimasi biaya dihitung dari harga di database dengan label "Perkiraan"**.
@@ -429,7 +429,7 @@ Tugas `B-01` sampai `B-12` tidak menyentuh folder Flutter. Tugas `B-13` sampai `
 
 **Kriteria selesai:** contoh dari `docs/PRD.md` bagian 9.3 menghasilkan respons dengan bentuk persis sama.
 
-### [ ] B-09: Penanganan error dan tes
+### [✔️] B-09: Penanganan error dan tes
 **Isi:** format error JSON yang seragam, validasi input, CORS, dan tes `pytest` untuk alur utama (login, diagnosis, draft, finalisasi, laporan). Periksa bahwa bentuk setiap respons cocok dengan `docs/PRD.md` bagian 9.
 
 **Kriteria selesai:** `pytest` bersih dan alur utama lolos dari awal sampai akhir.
