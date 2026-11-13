@@ -1,0 +1,58 @@
+# Kecocokan model dengan database
+
+**HASIL: TIDAK COCOK. Model ini tidak boleh dipasang ke API.**
+
+Alat ini penyaring awal; nama yang tampak berbeda perlu ditinjau manusia.
+
+## Ringkasan
+
+- gejala: BERBEDA = 16, HANYA_DI_MODEL = 13, MIRIP = 2
+- kerusakan: BERBEDA+FORMAT_KODE_BEDA = 9, HANYA_DI_DATABASE = 1
+
+## Rincian
+
+| Jenis | Kode model | Nama di model | Kode DB | Nama di database | Mirip | Status |
+|---|---|---|---|---|---:|---|
+| gejala | G01 | Mesin sulit dihidupkan | G01 | Mesin susah dihidupkan | 0.86 | MIRIP |
+| gejala | G02 | Mesin mati mendadak saat berjalan | G02 | Mesin mati mendadak | 0.73 | MIRIP |
+| gejala | G03 | Mesin mudah mati saat idle/langsam | G03 | Tarikan berat | 0.21 | BERBEDA |
+| gejala | G04 | Tarikan terasa berat/lemot | G04 | Knalpot berasap putih | 0.38 | BERBEDA |
+| gejala | G05 | Tarikan brebet/tersendat saat digas | G05 | Knalpot berasap hitam | 0.07 | BERBEDA |
+| gejala | G06 | Konsumsi bahan bakar boros | G06 | Suara mesin kasar | 0.47 | BERBEDA |
+| gejala | G07 | Putaran idle tidak stabil | G07 | Lampu redup | 0.22 | BERBEDA |
+| gejala | G08 | Tenaga hilang pada putaran tinggi/kecepatan tinggi | G08 | Klakson lemah atau mati | 0.30 | BERBEDA |
+| gejala | G09 | Suara kasar/kemrosok/gesekan dari area CVT | G09 | Boros bensin | 0.22 | BERBEDA |
+| gejala | G10 | Bunyi kretek-kretek saat motor berjalan | G10 | Rem kurang pakem | 0.18 | BERBEDA |
+| gejala | G11 | Bunyi berdecit/dengung dari area CVT | G11 | Rantai berisik | 0.32 | BERBEDA |
+| gejala | G12 | Getaran berlebih saat gas awal | G12 | Kopling selip | 0.19 | BERBEDA |
+| gejala | G13 | Gas awal menyentak atau selip (RPM naik, motor kurang melaju) | G13 | Getaran berlebih di stang | 0.19 | BERBEDA |
+| gejala | G14 | Starter elektrik tidak berputar sama sekali | G14 | Mesin overheat | 0.18 | BERBEDA |
+| gejala | G15 | Starter terasa berat/lemah/panjang | G15 | Bunyi ketukan di mesin | 0.14 | BERBEDA |
+| gejala | G16 | Bunyi klik/cetek-cetek saat tombol starter ditekan | G16 | Starter elektrik tidak berfungsi | 0.29 | BERBEDA |
+| gejala | G17 | Lampu meredup atau klakson melemah saat starter ditekan | G17 | Oli cepat habis | 0.17 | BERBEDA |
+| gejala | G18 | Starter berputar tetapi mesin tidak menyala | G18 | Putaran gas tidak stabil | 0.51 | BERBEDA |
+| gejala | G19 | Elektroda busi hitam/kotor/berkerak (hasil pemeriksaan) |  |  |  | HANYA_DI_MODEL |
+| gejala | G20 | Mesin terasa kasar/getar tidak halus |  |  |  | HANYA_DI_MODEL |
+| gejala | G21 | Asap putih/biru dari knalpot saat digeber |  |  |  | HANYA_DI_MODEL |
+| gejala | G22 | Oli mesin cepat berkurang |  |  |  | HANYA_DI_MODEL |
+| gejala | G23 | Terdengar suara ngelitik/tik-tik dari mesin |  |  |  | HANYA_DI_MODEL |
+| gejala | G24 | Tekanan kompresi rendah (hasil pengukuran) |  |  |  | HANYA_DI_MODEL |
+| gejala | G25 | Mesin sulit hidup padahal starter berputar normal dan aki baik |  |  |  | HANYA_DI_MODEL |
+| gejala | G26 | Respons gas lambat/terlambat |  |  |  | HANYA_DI_MODEL |
+| gejala | G27 | Mesin brebet saat akselerasi |  |  |  | HANYA_DI_MODEL |
+| gejala | G28 | Mesin lebih sulit hidup saat kondisi dingin |  |  |  | HANYA_DI_MODEL |
+| gejala | G29 | Mesin mati beberapa detik setelah dihidupkan |  |  |  | HANYA_DI_MODEL |
+| gejala | G30 | V-belt retak/mulur/pecah (hasil pemeriksaan fisik) |  |  |  | HANYA_DI_MODEL |
+| gejala | G31 | Roller peyang/aus (hasil pemeriksaan fisik) |  |  |  | HANYA_DI_MODEL |
+| kerusakan | K1 | Busi lemah/kotor | K01 | Busi kotor / aus | 0.62 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K2 | V-belt aus/mulur | K02 | Karburator kotor | 0.19 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K3 | Roller CVT aus/peyang | K03 | Aki lemah | 0.20 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K4 | Per CVT lemah (sumber terbatas) | K04 | Kampas rem aus | 0.27 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K5 | Dinamo starter/bendik bermasalah | K05 | Kampas kopling aus | 0.16 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K6 | Aki lemah | K06 | Rantai dan gear aus | 0.36 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K7 | Kompresi bocor (ring piston/klep/seal klep) | K07 | Filter udara kotor | 0.13 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K8 | Pompa bensin (fuel pump) lemah | K08 | Oli mesin habis atau kotor | 0.32 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan | K9 | Injektor/throttle body kotor | K09 | CDI bermasalah | 0.19 | BERBEDA+FORMAT_KODE_BEDA |
+| kerusakan |  |  | K10 | Koil pengapian lemah |  | HANYA_DI_DATABASE |
+
+Arti status: MIRIP = kode dan nama sepadan; BERBEDA = kode sama tetapi nama jauh berbeda (risiko salah tafsir); FORMAT_KODE_BEDA = angka sama tetapi penulisan berbeda (K1 vs K01); HANYA_DI_MODEL / HANYA_DI_DATABASE = tidak ada pasangan.

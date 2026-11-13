@@ -1,0 +1,128 @@
+{
+  "versi_meta": 1,
+  "dibuat": "2026-11-10 09:20 UTC",
+  "kode_gejala": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "G11",
+    "G12",
+    "G13",
+    "G14",
+    "G15",
+    "G16",
+    "G17",
+    "G18",
+    "G19",
+    "G20",
+    "G21",
+    "G22",
+    "G23",
+    "G24",
+    "G25",
+    "G26",
+    "G27",
+    "G28",
+    "G29",
+    "G30",
+    "G31"
+  ],
+  "kode_kelas": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K9"
+  ],
+  "nama_gejala": {
+    "G01": "Mesin sulit dihidupkan",
+    "G02": "Mesin mati mendadak saat berjalan",
+    "G03": "Mesin mudah mati saat idle/langsam",
+    "G04": "Tarikan terasa berat/lemot",
+    "G05": "Tarikan brebet/tersendat saat digas",
+    "G06": "Konsumsi bahan bakar boros",
+    "G07": "Putaran idle tidak stabil",
+    "G08": "Tenaga hilang pada putaran tinggi/kecepatan tinggi",
+    "G09": "Suara kasar/kemrosok/gesekan dari area CVT",
+    "G10": "Bunyi kretek-kretek saat motor berjalan",
+    "G11": "Bunyi berdecit/dengung dari area CVT",
+    "G12": "Getaran berlebih saat gas awal",
+    "G13": "Gas awal menyentak atau selip (RPM naik, motor kurang melaju)",
+    "G14": "Starter elektrik tidak berputar sama sekali",
+    "G15": "Starter terasa berat/lemah/panjang",
+    "G16": "Bunyi klik/cetek-cetek saat tombol starter ditekan",
+    "G17": "Lampu meredup atau klakson melemah saat starter ditekan",
+    "G18": "Starter berputar tetapi mesin tidak menyala",
+    "G19": "Elektroda busi hitam/kotor/berkerak (hasil pemeriksaan)",
+    "G20": "Mesin terasa kasar/getar tidak halus",
+    "G21": "Asap putih/biru dari knalpot saat digeber",
+    "G22": "Oli mesin cepat berkurang",
+    "G23": "Terdengar suara ngelitik/tik-tik dari mesin",
+    "G24": "Tekanan kompresi rendah (hasil pengukuran)",
+    "G25": "Mesin sulit hidup padahal starter berputar normal dan aki baik",
+    "G26": "Respons gas lambat/terlambat",
+    "G27": "Mesin brebet saat akselerasi",
+    "G28": "Mesin lebih sulit hidup saat kondisi dingin",
+    "G29": "Mesin mati beberapa detik setelah dihidupkan",
+    "G30": "V-belt retak/mulur/pecah (hasil pemeriksaan fisik)",
+    "G31": "Roller peyang/aus (hasil pemeriksaan fisik)"
+  },
+  "nama_kelas": {
+    "K1": "Busi lemah/kotor",
+    "K2": "V-belt aus/mulur",
+    "K3": "Roller CVT aus/peyang",
+    "K4": "Per CVT lemah (sumber terbatas)",
+    "K5": "Dinamo starter/bendik bermasalah",
+    "K6": "Aki lemah",
+    "K7": "Kompresi bocor (ring piston/klep/seal klep)",
+    "K8": "Pompa bensin (fuel pump) lemah",
+    "K9": "Injektor/throttle body kotor"
+  },
+  "random_state": 42,
+  "parameter": {
+    "n_estimators": 300,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "class_weight": null
+  },
+  "jumlah_latih": 856,
+  "jumlah_uji": 214,
+  "versi_library": {
+    "python": "3.12.3",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4"
+  },
+  "dataset": {
+    "berkas": "dataset_v3_motor_injeksi.csv",
+    "sha256": "4e66ce9fe80385962b6f6d47c95627905fc17df6560fc15c034dfb71da927839",
+    "baris_dibaca": 1080,
+    "baris_setelah_bersih": 1070,
+    "sumber_data": {
+      "WEB_SINTETIS": 1080
+    },
+    "status_verifikasi": {
+      "belum_diverifikasi": 1080
+    },
+    "data_sintetis": true
+  },
+  "metrik_uji": {
+    "akurasi": 0.8177570093457944,
+    "akurasi_top_k": 0.9813084112149533,
+    "f1_makro": 0.8139304215861334
+  },
+  "peringatan": [
+    "PERINGATAN: DATA SINTETIS. Dataset ini dibuat dari artikel web dan sampel acak, bukan dari kasus bengkel sungguhan, dan labelnya belum divalidasi mekanik. Angka di bawah hanya mengukur seberapa baik model menebak ulang data buatan itu. JANGAN dilaporkan sebagai kemampuan mendiagnosis motor sungguhan."
+  ]
+}

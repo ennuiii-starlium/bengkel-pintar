@@ -1,0 +1,32 @@
+gejala,uraian,kepentingan
+G19,Elektroda busi hitam/kotor/berkerak (hasil pemeriksaan),0.069241
+G24,Tekanan kompresi rendah (hasil pengukuran),0.055866
+G11,Bunyi berdecit/dengung dari area CVT,0.051856
+G31,Roller peyang/aus (hasil pemeriksaan fisik),0.051340
+G15,Starter terasa berat/lemah/panjang,0.043972
+G05,Tarikan brebet/tersendat saat digas,0.043770
+G17,Lampu meredup atau klakson melemah saat starter ditekan,0.039510
+G26,Respons gas lambat/terlambat,0.037928
+G30,V-belt retak/mulur/pecah (hasil pemeriksaan fisik),0.037245
+G04,Tarikan terasa berat/lemot,0.036826
+G01,Mesin sulit dihidupkan,0.035385
+G10,Bunyi kretek-kretek saat motor berjalan,0.033716
+G07,Putaran idle tidak stabil,0.031827
+G08,Tenaga hilang pada putaran tinggi/kecepatan tinggi,0.031045
+G25,Mesin sulit hidup padahal starter berputar normal dan aki baik,0.029225
+G27,Mesin brebet saat akselerasi,0.029062
+G12,Getaran berlebih saat gas awal,0.027953
+G29,Mesin mati beberapa detik setelah dihidupkan,0.027814
+G09,Suara kasar/kemrosok/gesekan dari area CVT,0.026907
+G06,Konsumsi bahan bakar boros,0.026842
+G22,Oli mesin cepat berkurang,0.024833
+G28,Mesin lebih sulit hidup saat kondisi dingin,0.024336
+G13,"Gas awal menyentak atau selip (RPM naik, motor kurang melaju)",0.024188
+G14,Starter elektrik tidak berputar sama sekali,0.023806
+G18,Starter berputar tetapi mesin tidak menyala,0.023584
+G16,Bunyi klik/cetek-cetek saat tombol starter ditekan,0.023288
+G21,Asap putih/biru dari knalpot saat digeber,0.020574
+G02,Mesin mati mendadak saat berjalan,0.020220
+G20,Mesin terasa kasar/getar tidak halus,0.018272
+G23,Terdengar suara ngelitik/tik-tik dari mesin,0.015309
+G03,Mesin mudah mati saat idle/langsam,0.014259
